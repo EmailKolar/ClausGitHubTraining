@@ -1,2 +1,19 @@
-package com.example.clausgithubtraining;public class HomeController {
+package com.example.clausgithubtraining;
+
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+
+    @GetMapping("/")
+    public String index(){
+        return "Hello World";
+    }
+
+
+
+    //kommentar om kode
 }
